@@ -1,0 +1,79 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #023047;
+    color: #050505;
+    font-size: 100%;
+}
+
+.posts-list {
+    width: 90%;
+    max-width: 600px;
+}
+
+.posts-list > * {
+    margin-bottom: 24px;
+}
+
+.post-meta {
+    display: flex;
+}
+
+.post-meta__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 60px;
+}
+
+.profile-pic-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0CD977;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic-default span {
+    font-weight: bold;
+    color: #023047;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like_button {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;    
+    text-decoration: none;
+    color: #404040;
+    cursor: pointer;
+}
+
+.like_button:not(.like-button--liked):hover {
+    background-color: #e3e3e3
+}
+
+.like-button_liked {
+    color: #0CD977;
+}
+
+.like-button_liked:not(.like-button--liked):hover {
+    background-color: #e3e3e3
+}
